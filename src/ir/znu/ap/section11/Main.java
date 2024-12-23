@@ -1,6 +1,6 @@
 package src.ir.znu.ap.section11;
 
-import myproject.stringutil.Point;
+import src.myproject.stringutil.Point;
 
 import java.io.File;
 import java.io.FileNotFoundException;

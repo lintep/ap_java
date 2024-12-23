@@ -1,6 +1,6 @@
 package src.ir.znu.ap.section10;
 
-import myproject.stringutil.Point;
+import src.myproject.stringutil.Point;
 
 import java.util.Random;
 

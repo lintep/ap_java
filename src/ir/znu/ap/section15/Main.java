@@ -6,9 +6,10 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) {
-        znu.ap.Main.printHi("Alireza");
-    }
+//    public static void main(String[] args) {
+//
+//        src.ir.znu.ap.Main.printHi("Alireza");
+//    }
 
     public static void main3(String[] args) {
         Scanner scanner = new Scanner(System.in);
