@@ -4,10 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Scanner;
+import java.util.*;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -16,12 +13,24 @@ import java.net.URL;
 
 public class Main {
 
+    public static void main(String[] args) throws IOException {
+        DomainDownloader domainDownloader = new DomainDownloader("https://www.znu.ac.ir/","/home/work/znu_html");
+        domainDownloader.startDownload();
+
+//        Queue<String> queue = new LinkedList<>();
+//        queue.add("1");
+//        queue.remove();
+    }
+
     static HashMap<String,String> fileNameToUrlMap=new HashMap<>();
+    static HashMap<String,String> urlToFileNameMap=new HashMap<>();
+
     public static void main0(String[] args) throws IOException {
         String imageUrl = "https://www.znu.ac.ir/files/uploaded/headers/znu_logo_fa.png";
         saveImage(imageUrl,"c:/temp/test.png");
     }
-    public static void main(String[] args) throws IOException {
+
+    public static void main2(String[] args) throws IOException {
         HashSet<String> allUrls= new HashSet<>();
         String url = "https://www.znu.ac.ir/";
         allUrls.add(url);
