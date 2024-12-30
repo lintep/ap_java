@@ -2,7 +2,7 @@ package src.myproject.stringutil;
 
 public class Point {
 
-    private int x;
+    protected int x;
     private int y;
 
     public Point() {
@@ -34,4 +34,11 @@ public class Point {
         return distance(inputPoint.x,inputPoint.y);
     }
 
+    @Override
+    public String toString() {
+        return "Point{" +
+                "x=" + x +
+                ", y=" + y +
+                '}';
+    }
 }

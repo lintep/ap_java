@@ -9,10 +9,10 @@ public class Rectangle extends Shape{
         this.l = l;
     }
 
-    @Override
-    public double getArea() {
-        return this.l * this.w;
-    }
+//    @Override
+//    public double getArea() {
+//        return this.l * this.w;
+//    }
 
     public boolean isSquare(){
 //        boolean result;

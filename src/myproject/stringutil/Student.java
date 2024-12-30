@@ -1,6 +1,6 @@
 package src.myproject.stringutil;
 
-public class Student {
+public class Student implements Comparable<Student> {
 
     private long id;
     private String firstName;
@@ -36,6 +36,10 @@ public class Student {
         return id;
     }
 
+    @Override
+    public String toString() {
+        return id+","+firstName+","+lastName;
+    }
 
     public void printInfo(){
         System.out.println("__________");
@@ -44,5 +48,11 @@ public class Student {
         System.out.println("lastName: "+lastName);
         System.out.println("__________");
 
+    }
+
+    @Override
+    public int compareTo(Student o) {
+//        return Long.compare(this.id,o.id);
+        return this.firstName.compareTo(o.firstName);
     }
 }
